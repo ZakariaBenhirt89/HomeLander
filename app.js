@@ -11,6 +11,7 @@ app.use(cors());
 
 // Parse request bodies as JSON
 app.use(bodyParser.json());
+const post = process.env.PORT || 5000;
 
 // Define a route to handle the POST request to HubSpot API
 app.post('/api/hubspot', async (req, res) => {
@@ -36,6 +37,6 @@ app.post('/api/hubspot', async (req, res) => {
       }
 });
 
-app.listen(() => {
+app.listen( port , () => {
   console.log(`Server running`);
 });
