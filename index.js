@@ -5,7 +5,6 @@ const cors = require('cors');
 require('dotenv').config()
 
 const app = express();
-const port = 5000; // Replace with your desired port number
 
 // Enable CORS for all origins
 app.use(cors());
@@ -37,6 +36,6 @@ app.post('/api/hubspot', async (req, res) => {
       }
 });
 
-app.listen(port , () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen(() => {
+  console.log(`Server running`);
 });
