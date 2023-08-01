@@ -4,9 +4,8 @@
   "description": "server proxy in nodejs for handling backend task ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node index.js"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1"
+     },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZakariaBenhirt89/HomeLander.git"
